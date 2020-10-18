@@ -35,10 +35,6 @@ class Home extends React.Component {
             .get('/Home', {})
             .then(res => {
                 const flightdata = res.data
-                console.log(flightdata)
-                console.log("damodaram", res.data)
-                console.log(JSON.stringify(flightdata))
-
                 this.setState({
                     flightdata: [...flightdata]
                 });
@@ -55,17 +51,12 @@ class Home extends React.Component {
     }
 
     onlaunchyearclick(year) {
-        console.log ("Damodaram year", year)
 
         if(year) {
              //axios.get(`${baseUrl}&${launchsuccessEP}=true&${landingsuccessEP}=true&${launchyearEP}=${year}`, {})
             axios.get(`${baseUrl}&${launchyearEP}=${year}`, {})
             .then(res => {
                 const flightdata = res.data
-                console.log(flightdata)
-                console.log("mahendra year", res.data)
-                console.log(JSON.stringify(flightdata))
-
                 if (Array.isArray(flightdata)){
                     this.setState({
                         flightdata: [...flightdata]
@@ -84,10 +75,6 @@ class Home extends React.Component {
             axios.get(`${baseUrl}&${launchsuccessEP}=${launchsuccess}`, {})
             .then(res => {
                 const flightdata = res.data
-                console.log(flightdata)
-                console.log("mahendra year", res.data)
-                console.log(JSON.stringify(flightdata))
-
                 if (Array.isArray(flightdata)){
                     this.setState({
                         flightdata: [...flightdata]
@@ -101,16 +88,14 @@ class Home extends React.Component {
     }
     
     render (){
-        console.log("flight data", this.state.flightdata)
         return (
             <div>
                 <React.Fragment>
                     <MediaCard 
-                    card1 = {this.state.flightdata}
+                    flightCard = {this.state.flightdata}
                     onlaunchyearclick = {this.onlaunchyearclick.bind()}
                     onSuccessLaunchClick = {this.onSuccessLaunchClick.bind()}
                     />
-
                 </React.Fragment>
             </div>
         )

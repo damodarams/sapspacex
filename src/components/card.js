@@ -38,23 +38,35 @@ const useStyles = makeStyles({
   fiterbg : {
     backgroundColor: 'white',
     paddingBottom: 25,
-    marginBottom: 25
-  },
-  cardstyle: {
-      //marginTop: 25
+    marginBottom: 25,
+    marginRight: -10
   },
   cardstyles: {
-    paddingLeft :20
+    paddingLeft :20,
+    marginLeft: 10
   },
   filtertext: {
     paddingLeft: 10,
-    paddingTop: 5,
+    paddingTop: 6,
+    paddingBottom: 4,
     backgroundColor:'#4a9d4a',
     color: 'white'
   },
   cardtitle: {
     color: 'blue'
-  }
+  },
+  paper: {
+    textAlign: 'center',
+    backgroundColor: '#4a9d4a',
+    fontSize: '20px',
+    color: 'white',
+    marginLeft: -60,
+    marginRight: -60,
+    marginTop : 10,
+    paddingTop: 10,
+    paddingBottom: 10
+
+  },
 });
 
 const BootstrapButton = withStyles({
@@ -96,12 +108,11 @@ const BootstrapButton = withStyles({
   },
 })(Button);
 
-export default function MediaCard( {card1,onlaunchyearclick,onSuccessLaunchClick}) {
+export default function MediaCard( {flightCard,onlaunchyearclick,onSuccessLaunchClick}) {
   const classes = useStyles();
 
-  console.log ("card1", card1.launch_success)
   let _flights = [];
-  Array.isArray(card1) && card1.map(item => {
+  Array.isArray(flightCard) && flightCard.map(item => {
       _flights.push(
         <Grid item xs ={12} sm ={6} md= {3} className = {classes.cardstyle}>
             <Card className={classes.root}>
@@ -129,8 +140,6 @@ export default function MediaCard( {card1,onlaunchyearclick,onSuccessLaunchClick
   });
 
   const clickedyear = (year) => {
-
-      console.log("clicked year", year)
       onlaunchyearclick(year);
   }
 
@@ -230,7 +239,11 @@ export default function MediaCard( {card1,onlaunchyearclick,onSuccessLaunchClick
         </Grid>
         </Grid>
     </Grid>
+    <Grid item xs={12}>
+          <Paper className={classes.paper}>Developed by Damodaram S</Paper>
+        </Grid>
         </Container>
+        
     
   );
 }
