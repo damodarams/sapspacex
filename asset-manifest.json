@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/sapspacex/static/css/main.55bee1e8.chunk.css",
-    "main.js": "/sapspacex/static/js/main.d572e591.chunk.js",
-    "main.js.map": "/sapspacex/static/js/main.d572e591.chunk.js.map",
+    "main.js": "/sapspacex/static/js/main.d53e5d53.chunk.js",
+    "main.js.map": "/sapspacex/static/js/main.d53e5d53.chunk.js.map",
     "runtime-main.js": "/sapspacex/static/js/runtime-main.ab4ca294.js",
     "runtime-main.js.map": "/sapspacex/static/js/runtime-main.ab4ca294.js.map",
-    "static/js/2.74331581.chunk.js": "/sapspacex/static/js/2.74331581.chunk.js",
-    "static/js/2.74331581.chunk.js.map": "/sapspacex/static/js/2.74331581.chunk.js.map",
+    "static/js/2.994d96db.chunk.js": "/sapspacex/static/js/2.994d96db.chunk.js",
+    "static/js/2.994d96db.chunk.js.map": "/sapspacex/static/js/2.994d96db.chunk.js.map",
     "index.html": "/sapspacex/index.html",
-    "precache-manifest.995fe3c62613eded83d020a2b870a743.js": "/sapspacex/precache-manifest.995fe3c62613eded83d020a2b870a743.js",
+    "precache-manifest.08a64728dd08487e0e30e1a6bf9ed5f9.js": "/sapspacex/precache-manifest.08a64728dd08487e0e30e1a6bf9ed5f9.js",
     "service-worker.js": "/sapspacex/service-worker.js",
     "static/css/main.55bee1e8.chunk.css.map": "/sapspacex/static/css/main.55bee1e8.chunk.css.map",
-    "static/js/2.74331581.chunk.js.LICENSE.txt": "/sapspacex/static/js/2.74331581.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/sapspacex/static/media/logo.5d5d9eef.svg"
+    "static/js/2.994d96db.chunk.js.LICENSE.txt": "/sapspacex/static/js/2.994d96db.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab4ca294.js",
-    "static/js/2.74331581.chunk.js",
+    "static/js/2.994d96db.chunk.js",
     "static/css/main.55bee1e8.chunk.css",
-    "static/js/main.d572e591.chunk.js"
+    "static/js/main.d53e5d53.chunk.js"
   ]
 }
