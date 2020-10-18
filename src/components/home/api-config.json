@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://api.spacexdata.com/v3/launches?limit=100",
+    "launchsuccessEP": "launch_success",
+    "landingsuccessEP": "land_success",
+    "launchyearEP": "launch_year"
+}
