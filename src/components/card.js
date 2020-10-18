@@ -2,16 +2,13 @@ import React from 'react';
 import { makeStyles, withStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import Container from '@material-ui/core/Container'
-import Paper from '@material-ui/core/Paper';
-import config from './landing/Config/blueprint.json';
-//import withStyles from '@material-ui/core/styles';
+import config from './api/blueprint.json';
 
 const useStyles = makeStyles({
   root: {
@@ -54,19 +51,7 @@ const useStyles = makeStyles({
   },
   cardtitle: {
     color: 'blue'
-  },
-  paper: {
-    textAlign: 'center',
-    backgroundColor: '#4a9d4a',
-    fontSize: '20px',
-    color: 'white',
-    marginLeft: -60,
-    marginRight: -60,
-    marginTop : 10,
-    paddingTop: 10,
-    paddingBottom: 10
-
-  },
+  }
 });
 
 const BootstrapButton = withStyles({
@@ -239,9 +224,7 @@ export default function MediaCard( {flightCard,onlaunchyearclick,onSuccessLaunch
         </Grid>
         </Grid>
     </Grid>
-    <Grid item xs={12}>
-          <Paper className={classes.paper}>Developed by Damodaram S</Paper>
-        </Grid>
+    
         </Container>
         
     
