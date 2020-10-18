@@ -218,7 +218,7 @@ export default function MediaCard( {flightCard,onlaunchyearclick,onSuccessLaunch
     </Grid>
 
 
-        <Grid item xs ={12} sm = {8} md = {10} className ={classes.cardstyles}>
+        <Grid item xs ={12} sm = {7} md = {10} className ={classes.cardstyles}>
         <Grid container spacing={3}>
         {_flights}
         </Grid>
