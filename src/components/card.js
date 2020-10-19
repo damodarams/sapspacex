@@ -189,7 +189,7 @@ export default function MediaCard( {flightCard,onlaunchyearclick,onSuccessLaunch
   return (
     <Container className ={classes.gridmargin}>
     <Grid container >
-    <Grid item xs ={12} sm = {4} md = {2} className ={classes.fiterbg}> 
+    <Grid item xs ={10} sm = {3} md = {2} className ={classes.fiterbg}> 
     <Typography gutterBottom variant="h6" component="h6" align="left" className = {classes.filtertext}>
      Filters
           </Typography>
@@ -218,7 +218,7 @@ export default function MediaCard( {flightCard,onlaunchyearclick,onSuccessLaunch
     </Grid>
 
 
-        <Grid item xs ={12} sm = {7} md = {10} className ={classes.cardstyles}>
+        <Grid item xs ={9} sm = {7} md = {10} className ={classes.cardstyles}>
         <Grid container spacing={3}>
         {_flights}
         </Grid>
